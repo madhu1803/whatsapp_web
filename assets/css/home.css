@@ -1,0 +1,26 @@
+.split {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* left box */
+.left {
+    width: 30%;
+    left: 0;
+    background-color: green;
+}
+
+/* right box */
+.right {
+    width: 70%;
+    right: 0;
+    background-color: red;
+}
+
+/* chat section */
+.chat_section {
+    display: flex;
+    flex-direction: column;
+}
