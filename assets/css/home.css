@@ -1,26 +1,163 @@
+html,
+body {
+    height: 100%;
+}
+
 .split {
     position: fixed;
     top: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
+/* ----------------------------------------------- left box -------------------------------------------------*/
 /* left box */
 .left {
     width: 30%;
     left: 0;
-    background-color: green;
 }
 
-/* right box */
+.contacts_section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contacts_section .user_box .user_details {
+    position: relative;
+}
+
+.contacts_section .user_box .user_details .user-name {}
+
+/* ----------------------------------------------- right box -------------------------------------------------*/
 .right {
     width: 70%;
     right: 0;
-    background-color: red;
 }
 
 /* chat section */
 .chat_section {
     display: flex;
     flex-direction: column;
+    height: 100%;
+}
+
+/* contact box */
+.user_box,
+.contact_box {
+    height: 10%;
+    background-color: #EDEDED !important;
+
+}
+
+.chat_section .contact_box .contact_details {
+    position: relative;
+}
+
+.chat_section .contact_box .contact_details .contact-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.chat_section .contact_box .contact_details .contact-name {
+    position: absolute;
+    top: 3px;
+    left: 65px;
+}
+
+.chat_section .contact_box .contact_details .contact-status {
+    position: absolute;
+    top: 25px;
+    left: 68px;
+}
+
+.chat_section .contact_box .contact_details .search-icon {
+    position: absolute;
+    left: 800px;
+    top: 25px;
+}
+
+.chat_section .contact_box .contact_details .pin {
+    position: absolute;
+    left: 850px;
+    top: 25px;
+}
+
+.chat_section .contact_box .contact_details .menu {
+    position: absolute;
+    left: 900px;
+    top: 25px;
+
+}
+
+/* message box */
+.message_box {
+    height: 80%;
+    background: #E5DDD5 !important;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message_box .sender_message {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+}
+
+.message_box .message_time {
+
+    color: gray;
+    text-align: right;
+}
+
+.message_box .receiver_message {
+    background: #DCF8C6;
+    width: 250px;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 650px;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+
+}
+
+/* typing box */
+.typing_box {
+    height: 10%;
+    background-color: #F0F0F0 !important;
+    position: relative;
+}
+
+.typing_box .smiley-icon {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.typing_box #typing_area {
+    border-radius: 25px;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 83%;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    background-color: white !important;
+}
+
+.typing_box .record-icon {
+    position: absolute;
+    top: 20px;
+    right: 25px;
 }
