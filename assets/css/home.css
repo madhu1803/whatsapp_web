@@ -43,11 +43,19 @@ body {
     height: 90%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
+}
+
+.contacts_section .chat_recipients .recipient.active {
+    height: 10%;
+    background: #EBEBEB;
+    width: 100%;
+    position: relative;
 }
 
 .contacts_section .chat_recipients .recipient {
     height: 10%;
-    background: lightgray;
+    background: #F5F5F5;
     width: 100%;
     position: relative;
 }
@@ -70,9 +78,11 @@ body {
     left: 60px;
 }
 
-/* .contacts_section .chat_recipients .recipient small {
-    text-align: right;
-} */
+.contacts_section .chat_recipients .recipient small {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
 
 /* ----------------------------------------------- right box -------------------------------------------------*/
 .right {
