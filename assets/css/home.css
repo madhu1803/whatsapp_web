@@ -27,7 +27,52 @@ body {
     position: relative;
 }
 
-.contacts_section .user_box .user_details .user-name {}
+.contacts_section .user_box {
+    height: 10%;
+    background-color: #EDEDED !important;
+}
+
+.contacts_section .user_box .user_details img {
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.contacts_section .chat_recipients {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_section .chat_recipients .recipient {
+    height: 10%;
+    background: lightgray;
+    width: 100%;
+    position: relative;
+}
+
+.contacts_section .chat_recipients .recipient img {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.contacts_section .chat_recipients .recipient h4 {
+    position: absolute;
+    left: 60px;
+    top: 0;
+}
+
+.contacts_section .chat_recipients .recipient p {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+
+/* .contacts_section .chat_recipients .recipient small {
+    text-align: right;
+} */
 
 /* ----------------------------------------------- right box -------------------------------------------------*/
 .right {
@@ -43,8 +88,8 @@ body {
 }
 
 /* contact box */
-.user_box,
-.contact_box {
+
+.chat_section .contact_box {
     height: 10%;
     background-color: #EDEDED !important;
 
